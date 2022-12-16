@@ -1,6 +1,6 @@
 
 //Source: https://en.touhouwiki.net/wiki/Scarlet_Weather_Rhapsody/Characters
-// https://en.touhouwiki.net/wiki/Touhou_Hisoutensoku/Characters
+//Source2: https://en.touhouwiki.net/wiki/Touhou_Hisoutensoku/Characters
 
 const th06List = [
     {
@@ -13,7 +13,7 @@ const th06List = [
     },
     {
         name: "Rumia",
-        url: "https://static.wikia.nocookie.net/villains/images/3/34/De_Rumia.png/revision/latest/scale-to-width-down/250?cb=20180330103916"
+        url: "https://cdn.discordapp.com/attachments/343105069455114251/1053168396457484338/De_Rumia.png"
     },
     {
         name: "Cirno",
@@ -45,7 +45,7 @@ const th06List = [
 const th07List = [
     {
         name: "Letty Whitecock",
-        url: "https://static.wikia.nocookie.net/burngoberrietvseries/images/b/bb/Da7884a51985b779.png/revision/latest?cb=20190810195801"
+        url: "https://media.discordapp.net/attachments/343105069455114251/1053168600241934396/latest.png?width=360&height=540"
     },
     {
         name: "Chen Kawai",
@@ -55,12 +55,30 @@ const th07List = [
         name: "Alice Margatroid",
         url: "https://en.touhouwiki.net/images/f/f0/Th105Alice.png?20101108015920"
     },
-    { name: "Kaguya", url: "https://static.wikia.nocookie.net/burngoberrietvseries/images/6/6b/De_Kaguya.png/revision/latest?cb=20191216181240" },
-    { name: "Mononobe no Futo", url: "https://en.touhouwiki.net/images/thumb/d/da/Th155Futo.png/165px-Th155Futo.png" },
-    { name: "Fujiwara no Mokou", url: "https://en.touhouwiki.net/images/thumb/0/04/Th155Mokou.png/165px-Th155Mokou.png" },
-    { name: "Futo2", url: "https://en.touhouwiki.net/images/thumb/f/f5/Th13Futo.png/165px-Th13Futo.png" },
-    { name: "Reisen Udongein Inaba", url: "https://en.touhouwiki.net/images/thumb/0/02/Th155Reisen.png/283px-Th155Reisen.png" },
-    { name: "Test", url: "https://dictionary.cambridge.org/images/thumb/black_noun_002_03536.jpg?version=5.0.286" }
+    {
+        name: "Kaguya",
+        url: "https://media.discordapp.net/attachments/343105069455114251/1053168910624636948/latest.png?width=425&height=409"
+    },
+    {
+        name: "Mononobe no Futo",
+        url: "https://en.touhouwiki.net/images/thumb/d/da/Th155Futo.png/165px-Th155Futo.png"
+    },
+    {
+        name: "Fujiwara no Mokou",
+        url: "https://en.touhouwiki.net/images/thumb/0/04/Th155Mokou.png/165px-Th155Mokou.png"
+    },
+    {
+        name: "Futo2",
+        url: "https://en.touhouwiki.net/images/thumb/f/f5/Th13Futo.png/165px-Th13Futo.png"
+    },
+    {
+        name: "Reisen Udongein Inaba",
+        url: "https://en.touhouwiki.net/images/thumb/0/02/Th155Reisen.png/283px-Th155Reisen.png"
+    },
+    {
+        name: "Test",
+        url: "https://dictionary.cambridge.org/images/thumb/black_noun_002_03536.jpg?version=5.0.286"
+    }
 ]
 
 const th08List = [
