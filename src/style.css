@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Revue";
+    src: url("fonts/revue bt.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Revue", sans-serif;
+}
+
+body {
+    background-color: #333;
+}
+
+.main {
+    background-color: #97A;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 0.2em;
+    gap: 1rem;
+    width: 68rem;
+    border-radius: 1rem;
+}
+
+.main h1 {
+    border-radius: 1rem;
+    color: #ffffff;
+    letter-spacing: 0.2rem;
+    align-self: center;
+    padding: 0 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.349) inset;
+}
+
+#card_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    list-style-position: inside;
+    white-space: nowrap;
+
+}
+
+:is(.card, .closed_card) {
+    padding-top: 0.7rem;
+    width: 10rem;
+    height: 12rem;
+    background-image: url("https://en.touhouwiki.net/images/thumb/b/b9/BLANK_max_185.png/128px-BLANK_max_185.png");
+    background-size: 10rem 12rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.349);
+    user-select: none;
+    cursor: pointer;
+}
+
+:is(.card, .closed_card) p {
+    color: white;
+    background-color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+:is(.card, .closed_card) img {
+    
+    width: 8.5rem;
+    height: 10.6rem;
+    object-fit: cover;
+    image-rendering:crisp-edges;
+}
+
+.card:hover {
+    opacity: 60%;
+    transition: opacity 200ms;
+}
+
+.closed_card {
+    opacity: 20%;
+    box-shadow: 0 0 1rem inset;
+}
