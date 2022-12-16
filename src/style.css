@@ -12,12 +12,14 @@
 
 body {
     background-color: #333;
+    display: flex;
+    place-content: center;
+    gap: 1rem;
 }
 
 .main {
     background-color: #97A;
-    margin: 1rem auto;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -26,24 +28,49 @@ body {
     gap: 1rem;
     width: 68rem;
     border-radius: 1rem;
+    margin-top: 1%;
 }
-
 .main h1 {
     border-radius: 1rem;
-    color: #ffffff;
+    color: white;
     letter-spacing: 0.2rem;
     align-self: center;
     padding: 0 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.349) inset;
 }
 
+.side {
+    background-color: #97A;
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.2em;
+    gap: 1rem;
+    width: 20rem;
+    border-radius: 1rem;
+    margin-top: 1%;
+}
+.side h2 {
+    border-radius: 1rem;
+    color: white;
+    letter-spacing: 0.2rem;
+    align-self: center;
+    padding: 0 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.349) inset;
+}
+@media (max-width: 68rem) {
+    .side {
+        display:none;
+    }
+}
+
 #card_container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1em;
-    list-style-position: inside;
+    gap: 1rem;
     white-space: nowrap;
+    place-content: center;
 
 }
 
@@ -51,8 +78,8 @@ body {
     padding-top: 0.7rem;
     width: 10rem;
     height: 12rem;
-    background-image: url("https://en.touhouwiki.net/images/thumb/b/b9/BLANK_max_185.png/128px-BLANK_max_185.png");
-    background-size: 10rem 12rem;
+    background-image: url("./imgs/card.png");
+    background-size: 100% 100%;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.349);
     user-select: none;
     cursor: pointer;
@@ -66,19 +93,36 @@ body {
 }
 
 :is(.card, .closed_card) img {
-    
-    width: 8.5rem;
-    height: 10.6rem;
+    width: 85%;
+    height: 94%;
     object-fit: cover;
-    image-rendering:crisp-edges;
 }
 
-.card:hover {
-    opacity: 60%;
-    transition: opacity 200ms;
+@media (min-width: 68rem) {
+    .card:hover {
+        opacity: 60%;
+        transition: opacity 200ms;
+    }
 }
 
 .closed_card {
     opacity: 20%;
     box-shadow: 0 0 1rem inset;
+}
+
+@media (max-width: 68rem) {
+    .main {
+        width: 98%;
+    }
+    
+    :is(.card, .closed_card) {
+        width: 6rem;
+        height: 8rem;
+        padding-top: 0.4rem;
+    }
+
+    :is(.card, .closed_card) p {
+        font-size: 0.8rem;
+    }
+    
 }

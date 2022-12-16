@@ -1,15 +1,18 @@
 
-//Source: https://en.touhouwiki.net/wiki/Scarlet_Weather_Rhapsody/Characters
+//Source1: https://en.touhouwiki.net/wiki/Scarlet_Weather_Rhapsody/Characters
 //Source2: https://en.touhouwiki.net/wiki/Touhou_Hisoutensoku/Characters
+//Source3: https://danbooru.donmai.us/posts/1466766?q=dairi+wriggle_nightbug
+//Source4: https://en.touhouwiki.net/wiki/Phantasmagoria_of_Flower_View/Characters
+//Bicubic Resising
 
 const th06List = [
     {
         name: "Reimu Hakurei",
-        url: "https://en.touhouwiki.net/images/d/d8/Th105Reimu.png?20110828125010"
+        url: "./src/imgs/reimu.png"
     },
     {
         name: "Marisa Kirisame",
-        url: "https://en.touhouwiki.net/images/5/5d/Th105Marisa.png?20110828132821"
+        url: "./src/imgs/marisa.png"
     },
     {
         name: "Rumia",
@@ -20,7 +23,7 @@ const th06List = [
         url: "https://en.touhouwiki.net/images/c/cb/Th123Cirno.png?20120707143944"
     },
     {
-        name: "Hong Meiling",
+        name: "Meiling Hong",
         url: "https://en.touhouwiki.net/images/c/c9/Th123Meiling.png?20120707144434"
     },
     {
@@ -28,7 +31,7 @@ const th06List = [
         url: "https://en.touhouwiki.net/images/9/99/Th105Patchouli.png?20110828133338"
     },
     {
-        name: "Sakuya Izayaoi",
+        name: "Sakuya Izayoi",
         url: "https://en.touhouwiki.net/images/b/b7/Th105Sakuya.png?20110828192800"
     },
     {
@@ -37,18 +40,17 @@ const th06List = [
     },
     {
         name: "Flandre Scarlet",
-        url: "https://cdn.discordapp.com/attachments/343105069455114251/1053163529970122852/imgbin_the-embodiment-of-scarlet-devil-wiki-chibi-png.png"
-    },
-
+        url: "./src/imgs/flan.png"
+    }
 ]
 
 const th07List = [
     {
-        name: "Letty Whitecock",
+        name: "Letty Whiterock",
         url: "https://media.discordapp.net/attachments/343105069455114251/1053168600241934396/latest.png?width=360&height=540"
     },
     {
-        name: "Chen Kawai",
+        name: "Chen",
         url: "https://cdn.discordapp.com/attachments/343105069455114251/1053165142453518376/faabab1eb58f2f5adad93d289670be710fbd3b11r1-376-458v2_00-removebg-preview.png"
     },
     {
@@ -56,49 +58,78 @@ const th07List = [
         url: "https://en.touhouwiki.net/images/f/f0/Th105Alice.png?20101108015920"
     },
     {
-        name: "Kaguya",
-        url: "https://media.discordapp.net/attachments/343105069455114251/1053168910624636948/latest.png?width=425&height=409"
+        name: "Youmu Konpaku",
+        url: "https://en.touhouwiki.net/images/7/72/Th105Youmu.png?20110828224316"
     },
     {
-        name: "Mononobe no Futo",
-        url: "https://en.touhouwiki.net/images/thumb/d/da/Th155Futo.png/165px-Th155Futo.png"
+        name: "Yuyuko Saigyouji",
+        url: "https://en.touhouwiki.net/images/0/09/Th105Yuyuko.png?20110828225132"
     },
     {
-        name: "Fujiwara no Mokou",
-        url: "https://en.touhouwiki.net/images/thumb/0/04/Th155Mokou.png/165px-Th155Mokou.png"
+        name: "Lyrica Prismriver",
+        url: "https://en.touhouwiki.net/images/b/bb/Th09LyricaPrismriver.png?20110830222815"
     },
     {
-        name: "Futo2",
-        url: "https://en.touhouwiki.net/images/thumb/f/f5/Th13Futo.png/165px-Th13Futo.png"
+        name: "Merlin Prismriver",
+        url: "https://en.touhouwiki.net/images/c/ca/Th09MerlinPrismriver.png?20110830222906"
     },
     {
-        name: "Reisen Udongein Inaba",
-        url: "https://en.touhouwiki.net/images/thumb/0/02/Th155Reisen.png/283px-Th155Reisen.png"
+        name: "Lunasa Prismriver",
+        url: "https://en.touhouwiki.net/images/d/da/Th09LunasaPrismriver.png?20110830222753"
     },
     {
-        name: "Test",
-        url: "https://dictionary.cambridge.org/images/thumb/black_noun_002_03536.jpg?version=5.0.286"
+        name: "Ran Yakumo",
+        url: "./src/imgs/ran.png"
+    },
+    {
+        name: "Yukari Yakumo",
+        url: "https://en.touhouwiki.net/images/1/14/Th105Yukari.png?20110828224739"
     }
 ]
 
 const th08List = [
-    { name: "Reimu", url: "https://en.touhouwiki.net/images/thumb/8/81/Th08Reimu.png/118px-Th08Reimu.png" },
-    { name: "Flandre Scarlet", url: "https://en.touhouwiki.net/images/b/bd/Th06Flandre.png" },
-    { name: "Remilia Scarlet", url: "https://en.touhouwiki.net/images/thumb/5/5a/RemiIN.png/149px-RemiIN.png" },
-    { name: "Sakuya Izayaoi", url: "https://en.touhouwiki.net/images/thumb/2/23/SakuyaIN.png/112px-SakuyaIN.png" },
-    { name: "Patchouli Knowledge", url: "https://en.touhouwiki.net/images/thumb/9/99/Th105Patchouli.png/165px-Th105Patchouli.png" }
+    {
+        name: "Wriggle Nightbug",
+        url: "./src/imgs/wriggle.png"
+    },
+    {
+        name: "Mystia Lorelei",
+        url: "https://en.touhouwiki.net/images/c/c3/Th09MystiaLorelei.png?20110830222944"
+    },
+    {
+        name: "Keine Kamishirasawa",
+        url: "./src/imgs/keine.png"
+    },
+    {
+        name: "Tewi Inaba",
+        url: "./src/imgs/tewi.png"
+    },
+    {
+        name: "Reisen Udongein Inaba",
+        url: "https://en.touhouwiki.net/images/9/92/Th105Reisen.png?20110828135911"
+    },
+    {
+        name: "Eirin Yagokoro",
+        url: "./src/imgs/eirin.png"
+    },
+    {
+        name: "Kaguya Houraisan",
+        url: "./src/imgs/kaguya.png"
+    },
+    {
+        name: "Fujiwara no Mokou",
+        url: "./src/imgs/mokou.png"
+    }
 ]
 
-const cardBackground = "https://en.touhouwiki.net/images/thumb/b/b9/BLANK_max_185.png/128px-BLANK_max_185.png"
-
-const allList = [].concat(th06List, th07List);
+const allList = [].concat(th06List, th07List, th08List);
 
 
 function onLoad() {
     const card_list = document.getElementById("card_container");
 
 
-    //imageList.sort(() => (Math.random() > 0.5) ? 1 : -1);
+    allList.sort(() => (Math.random() > 0.5) ? 1 : -1);
 
     for (let index = 0; index < 24; index++) {
         let li = document.createElement("div");
